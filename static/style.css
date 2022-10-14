@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 html, body {
-    font-family: Chakra Petch, Arial;
+    font-family: Ubuntu, Arial;
     width: 100%;
     height: 100%;
 }
@@ -102,7 +102,7 @@ section#inicio {
 }
 
 section#inicio h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 
 section#inicio span#subtitle {
@@ -121,4 +121,51 @@ section#inicio div#arraste {
 section#inicio div#arraste a {
     text-decoration: none;
     color: #fff;
+}
+
+i.menu-mobile {
+    position: fixed;
+    color: #fff;
+    background-color: transparent;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-nav-active {
+    overflow: hidden;
+}
+
+.menu-nav-active #header {
+    left: 0;
+
+}
+
+@media (max-width: 1024px) {
+
+    #header {
+        left: -300px;
+    }
+    i.menu-mobile {
+        display: flex;
+    }
+    section#inicio h2 {
+        font-size: 3rem;
+    }
+    section#inicio span#subtitle {
+        margin-right: 0;
+        font-size: 1rem;
+    }
+    #main {
+        margin-left: 0;
+    }
+
 }
