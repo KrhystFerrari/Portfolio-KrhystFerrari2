@@ -187,3 +187,25 @@ i.menu-mobile {
 .section-bg {
     background-color: #eff5ff;
 }
+
+.carousel-control-prev {
+    margin-left: -8rem;
+}
+
+.carousel-control-next {
+    margin-right: -8rem;
+}
+
+.carousel-indicators {
+    margin-bottom: -35px;
+}
+
+@media (max-width: 1860px) {
+    .carousel-control-prev {
+        margin-left: 0;
+    }
+    
+    .carousel-control-next {
+        margin-right: 0;
+    }
+}
