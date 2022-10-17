@@ -5,13 +5,13 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = 'thicode'
+app.secret_key = 'klf123456'
 
 mail_settings = {
     "MAIL_SERVER": 'smtp.gmail.com',
-    "MAIL_PORT": 465,
-    "MAIL_USE_TLS": False,
-    "MAIL_USE_SSL": True,
+    "MAIL_PORT": 587,
+    "MAIL_USE_TLS": True,
+    "MAIL_USE_SSL": False,
     "MAIL_USERNAME": os.getenv("EMAIL"),
     "MAIL_PASSWORD": os.getenv("SENHA")
 }
@@ -41,7 +41,7 @@ def send():
         msg = Message(
             subject = f'{formContato.nome} te enviou uma mensagem no portfólio',
             sender = app.config.get("MAIL_USERNAME"),
-            recipients= ['docencia.thiago@gmail.com', app.config.get("MAIL_USERNAME")],
+            recipients= ['krhystoffersonf@gmail.com', app.config.get("MAIL_USERNAME")],
             body = f'''
             
             {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte mensagem:
