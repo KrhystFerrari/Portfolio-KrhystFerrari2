@@ -216,6 +216,7 @@ i.menu-mobile {
   #portfolio,
   #contato {
     margin-left: 3rem;
+    margin-right: -3rem;
   }
 
 }
@@ -237,7 +238,7 @@ i.menu-mobile {
   }
   section#inicio span#subtitle{
     margin-right: 0;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
   }
   #main{
     margin-left: 0;
