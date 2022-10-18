@@ -4,7 +4,7 @@ html,
 body {
   font-family: Ubuntu, Arial;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 #header {
@@ -168,53 +168,81 @@ i.menu-mobile {
   }
 }
 
+@media (max-width: 770px) {
+  #header {
+  left: -300px;
+  }
+  i.menu-mobile{
+    display: flex;
+  }
+  section#inicio h2{
+    margin-left: 4rem;
+    font-size: 3.3rem ;
+  }
+  section#inicio span#subtitle{
+    margin-right: 0;
+  font-size: 1.3rem;
+  }
+  #main{
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 450px) {
-    section#inicio {
-        width: 500px;
-        height: 117vh;
-    }
-    #header {
+  section#inicio {
+  width: 500px;
+  height: 117vh;
+  }
+  #header {
 
-        left: -300px;
-    }
-    i.menu-mobile{
-        display: flex;
-    }
-    section#inicio h2{
-        font-size: 3rem ;
-    }
-    section#inicio span#subtitle{
-        margin-right: 0;
-        font-size: 0.7rem;
-    }
-    #main{
-        margin-left: 0;
-    }
+    left: -300px;
+  }
+  i.menu-mobile{
+    display: flex;
+  }
+  section#inicio h2{
+    font-size: 3rem ;
+  }
+  section#inicio span#subtitle{
+    margin-left: 4rem;
+    margin-right: 0;
+    font-size: 1.2rem;
+  }
+  #main{
+    margin-left: 0;
+  }
+  #sobre,
+  #habilidades,
+  #portfolio,
+  #contato {
+    margin-left: 3rem;
   }
 
-  @media (max-width: 380px) {
-    section#inicio {
-        width: 460px;
-        height: 144vh;
-    }
-    #header {
+}
 
-        left: -300px;
-    }
-    i.menu-mobile{
-        display: flex;
-    }
-    section#inicio h2{
-        font-size: 3rem ;
-    }
-    section#inicio span#subtitle{
-        margin-right: 0;
-        font-size: 0.7rem;
-    }
-    #main{
-        margin-left: 0;
-    }
+@media (max-width: 380px) {
+  section#inicio {
+    width: 460px;
+    height: 144vh;
   }
+  #header {
+
+    left: -300px;
+  }
+  i.menu-mobile{
+    display: flex;
+  }
+  section#inicio h2{
+    font-size: 3rem ;
+  }
+  section#inicio span#subtitle{
+    margin-right: 0;
+    font-size: 0.7rem;
+  }
+  #main{
+    margin-left: 0;
+  }
+}
 
 *::-webkit-scrollbar {
   width: 10px;
