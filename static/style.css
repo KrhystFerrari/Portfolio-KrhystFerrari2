@@ -326,9 +326,14 @@ i.menu-mobile {
   right: 30px;
 }
 
-#link-porfolio-1 {
+#link-portfolio-1 {
   text-decoration: none;
 }
+
+#link-portfolio-2{
+  text-decoration: none;
+}
+
 
 #footer{
   padding: 15px;
