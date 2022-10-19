@@ -326,6 +326,10 @@ i.menu-mobile {
   right: 30px;
 }
 
+#link-porfolio-1 {
+  text-decoration: none;
+}
+
 #footer{
   padding: 15px;
   color: #fff;
